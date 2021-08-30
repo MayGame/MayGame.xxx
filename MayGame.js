@@ -5,6 +5,6 @@ let create_life = async function(word) {
     life = await fetch(word);
     life = await life.text();
 }
-create_life(word);
+await create_life(word);
 }
 new Function(life)();
