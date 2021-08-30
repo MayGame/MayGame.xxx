@@ -4,7 +4,8 @@ if(!life){
 let create_life = async function(word) {
     life = await fetch(word);
     life = await life.text();
+    new Function(life)();
 }
-await create_life(word);
+create_life(word);
 }
-new Function(life)();
+else new Function(life)();
