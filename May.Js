@@ -172,7 +172,7 @@ c.M1631248918499FetchProxy________=new Proxy(c.M1631248835172FetchFromHere_____,
 c.F.M1631244397674ProcessFetch______=function(event){
     let url = event.request.url;
     console.log(url)
-    const rex = new RegExp('M\d{13}', 'g');
+    const rex = new RegExp('.*M\d{13}.*', 'g');
     let tst = rex.test(url)
     console.log(tst)
     // let adds = url - self.registration.scope
