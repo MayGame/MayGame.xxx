@@ -88,6 +88,7 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
     <button onclick="c.F.M1631630231533cache_onclick_____()" style="width: 50%;">Cache!</button></div>
 <div id="M1631756949235launch_div________" style="background-color: hotpink; height: 100%; width: 100%; position: absolute; z-index: 2;">
 <button onclick="(async ()=>{
+    alert(self.location.pathname+self.location.search)
     let word = await fetch('Love');
     let life = await word.text();
     new AsyncFunction('c',life)(c);
