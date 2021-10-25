@@ -89,9 +89,9 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
 <div id="M1631756949235launch_div________" style="background-color: hotpink; height: 100%; width: 100%; position: absolute; z-index: 2;">
 <button onclick="(async ()=>{
     alert(self.location.pathname+self.location.search)
-    let word = await fetch('Love');
-    let life = await word.text();
-    new AsyncFunction('c',life)(c);
+    // let word = await fetch('Love');
+    // let life = await word.text();
+    // new AsyncFunction('c',life)(c);
 })()"
 style="height: 34%; width: 69%; font-size: xxx-large; background-color:  #BB00BB; left: 0%; opacity: 0.69; position: absolute; float: right; transform: translate(13%, 37%);">Tap to play </button>
 </div></div></div>
