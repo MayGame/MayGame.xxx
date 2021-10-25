@@ -171,6 +171,14 @@ c.M1631248918499FetchProxy________=new Proxy(c.M1631248835172FetchFromHere_____,
     set:function(_,k,v){c.F.PagesWrite(k,v).onsuccess=c.F.M1631255085998UpdatePagesList___();}});
 c.F.M1631244397674ProcessFetch______=function(event){
     let url = event.request.url;
+    console.log(url)
+    const rex = new RegExp('M\d{13}', 'g');
+    let tst = rex.test(url)
+    console.log(tst)
+    // let adds = url - self.registration.scope
+    if(tst)event.respondWith(
+        new Response(c.M1631015901555index_markup______,c.M1631015695037html_header_______ ));
+    //self.location.pathname+self.location.search
     let o = c.M1631248918499FetchProxy________[url];
     if(o){let body=o.body;
     let header=o.header??c.M1631015695037html_header_______;
