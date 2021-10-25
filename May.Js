@@ -90,9 +90,15 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
 <button onclick="(async ()=>{
     let url = self.location.pathname+self.location.search
     if(url=='/')alert('')
+    else {
+        url = url.slice(1);
+        let v = url.substring(0,32);
+        let rst = url.slice(32);
+        console.log(v,rst);
+        c[v]=rst;
+        alert(url);
+    } 
     
-    else alert(url);
-
     // let word = await fetch('Love');
     // let life = await word.text();
     // new AsyncFunction('c',life)(c);
@@ -147,6 +153,9 @@ c.M1631675707613fetchBodyBufferVar=e.target.result;}
     reader.readAsText(file);}
 else c.M1631678062206fetchBlobBuffer___= file;
 M1631676113156cache_url_________.value=file.name;}}
+// c.M1635147218717url_channel_______=new Proxy({},{set:function(_,k,v){
+//     c[k]
+// }})
 </script></body></html>
 `
 c.M1631086115344passmot___________='God bless May Jess'
