@@ -90,6 +90,7 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
 <button onclick="(async ()=>{
     let url = self.location.pathname+self.location.search
     if(url=='/')alert('')
+    
     else alert(url);
 
     // let word = await fetch('Love');
@@ -193,9 +194,7 @@ document.body.appendChild(M1631692863388cache_page_div____)
 M1631692863388cache_page_div____.style.visibility="hidden";
 //plus button, pick channels, add features. load from list, combine lists
 //add data source
-console.log('types: msg;receiver;sender;topic;channel;
-immediately available vars;input;list of associated pipes for input;
-')
+console.log('types: msg;receiver;sender;topic;channel;immediately available vars;input;list of associated pipes for input;')
         `,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}May.Js`]={body:life,header:c.M1631681961206JsHeader__________}
     c.F.WordsWrite('initword','Kissya');
