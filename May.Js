@@ -153,7 +153,12 @@ c.M1631675707613fetchBodyBufferVar=e.target.result;}
     reader.readAsText(file);}
 else c.M1631678062206fetchBlobBuffer___= file;
 M1631676113156cache_url_________.value=file.name;}}
-c.M1635222584216default_url_channe=new Proxy(c,{get:function(_,k){console.log("getter, ",k )}})
+c.M1635222584216default_url_channe={M1635233756952fetch_log_________:c.M1635233756952fetch_log_________}
+c.M1635233756952fetch_log_________=new Proxy(c,{get:async function(_,k){
+    let res = await fetch('https://xxx.maygame.xxx/memoires_eternels/'+k);
+    console.log("getter, ",k )}});
+    console.log(res)
+// c.M1635223330997reply_channel_url_=
 c.M1635147218717url_channel_______=c.M1635222584216default_url_channe
 /*  */
 
