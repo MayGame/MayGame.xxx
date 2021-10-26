@@ -95,7 +95,7 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
         let v = url.substring(0,32);
         let rst = url.slice(32);
         console.log(v,rst);
-        c[v]=rst;
+        c.M1635147218717url_channel_______[v][rst];
         alert(url);
     } 
     
@@ -153,9 +153,10 @@ c.M1631675707613fetchBodyBufferVar=e.target.result;}
     reader.readAsText(file);}
 else c.M1631678062206fetchBlobBuffer___= file;
 M1631676113156cache_url_________.value=file.name;}}
-// c.M1635147218717url_channel_______=new Proxy({},{set:function(_,k,v){
-//     c[k]
-// }})
+c.M1635222584216default_url_channe=new Proxy(c,{get:function(_,k){console.log("getter, ",k )}})
+c.M1635147218717url_channel_______=c.M1635222584216default_url_channe
+/*  */
+
 </script></body></html>
 `
 c.M1631086115344passmot___________='God bless May Jess'
