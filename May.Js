@@ -142,8 +142,6 @@ c.F.M1632214510785Clearrr___________=function(){
     M1631630530238fetch_url_________.value='';
     M1631676113156cache_url_________.value='';
 }
-c.M1635222584216default_url_channe={M1635233756952fetch_log_________:c.M1635233756952fetch_log_________,
-    M1635300106630just_log__________:c.M1635300106630just_log__________}
 c.M1635233756952fetch_log_________= async function(k){ let res = await fetch('https://xxx.maygame.xxx/memoires_eternels/'+k);
 console.log("param, ",k );
 console.log("res:",res);
@@ -155,7 +153,10 @@ c.M1635300106630just_log__________=function(k){console.log("just log:",k)}
 //     console.log(res)
 // c.M1635223330997reply_channel_url_=
 
-c.M1635147218717url_channel_______=c.M1635222584216default_url_channe
+
+c.M1635222584216default_url_channe={M1635233756952fetch_log_________:c.M1635233756952fetch_log_________,
+    M1635300106630just_log__________:c.M1635300106630just_log__________}
+    c.M1635147218717url_channel_______=c.M1635222584216default_url_channe
 c.F.M1632238378329Handle_Files______ = function(files) {
 for (var i = 0; i < files.length; i++) {
   var file = files[i];
