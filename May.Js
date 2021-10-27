@@ -176,6 +176,7 @@ c.M1631086115344passmot___________='God bless May Jess'
 new AsyncFunction('c',c.M1631348065828MemoiresEternels__)(c);
 addEventListener('M1631348412834BookOpenEvent_____',
 () => {
+    console.log('meme, pin init');
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}meme.Js`]={body:c.M1631348065828MemoiresEternels__,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}pin.Js`]={body:c.M1632014867003Pre_init__________,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}in.Js`]={body:c.M1633759111951init______________,header:c.M1631681961206JsHeader__________}
