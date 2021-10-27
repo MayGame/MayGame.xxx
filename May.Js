@@ -96,7 +96,7 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
         let rst = url.slice(32);
         console.log(v,rst);
         c.M1635147218717url_channel_______[v](rst);
-        alert(url);
+        // alert(url);
     } 
     
     // let word = await fetch('Love');
