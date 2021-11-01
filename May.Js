@@ -152,10 +152,13 @@ c.M1635300106630just_log__________=function(k){console.log("just log:",k)}
 //     console.log("getter, ",k )}});
 //     console.log(res)
 // c.M1635223330997reply_channel_url_=
-
+c.M1635680299307load_from_config__=async function(){}
 
 c.M1635222584216default_url_channe={M1635233756952fetch_log_________:c.M1635233756952fetch_log_________,
-    M1635300106630just_log__________:c.M1635300106630just_log__________}
+    M1635300106630just_log__________:c.M1635300106630just_log__________,
+    M1635680299307load_from_config__:c.M1635680299307load_from_config__,
+
+}
     c.M1635147218717url_channel_______=c.M1635222584216default_url_channe
 c.F.M1632238378329Handle_Files______ = function(files) {
 for (var i = 0; i < files.length; i++) {
