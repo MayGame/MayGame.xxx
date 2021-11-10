@@ -34,12 +34,9 @@ c.F.M1631631671789fetchBtnOnclick___=async function(){
 c.F.M1632228496305Toggle_Cache______ = function(){
 if(M1631756949235launch_div________.style.visibility=='hidden')
 {M1631692863388cache_page_div____.style.visibility='hidden';
-    M1631756949235launch_div________.style.visibility='visible';
-}
-    else 
-    {M1631692863388cache_page_div____.style.visibility='visible';
-M1631756949235launch_div________.style.visibility='hidden';
-}
+    M1631756949235launch_div________.style.visibility='visible';}
+    else {M1631692863388cache_page_div____.style.visibility='visible';
+M1631756949235launch_div________.style.visibility='hidden';}
 c.M1631066770639id_innerHTML______ = new Proxy({},{get:function(_,k){return document.getElementById(k);},
 set:function(_,k,v){document.getElementById(k).innerHTML=v;}})
 c.F.M1632214510785Clearrr___________=function(){
@@ -183,10 +180,7 @@ c.F.M1632327640527initScript________=async function(){
     res2.onsuccess=function(){
         new AsyncFunction(res2.result)();
     }}}}
-c.M1636543633155SecsFlag__________=false;
-c.F.SecsOn = function (){
-    if(!c.M1636543633155SecsFlag__________){c.M1631015901555index_markup______=c.M1636546090120BaseMarkup________+c.M1636543275112Secs______________;
-    M1636543633155SecsFlag__________=true;}}
+c.F.SecsOn = function (){c.M1631015901555index_markup______=c.M1636546090120BaseMarkup________+c.M1636543275112Secs______________;}
 c.F.M1632327609356initScript________=async function(){
     let word = await fetch('May.Js');
     let life = await word.text();
