@@ -201,12 +201,9 @@ c.M1631248918499FetchProxy________=new Proxy(c.M1631248835172FetchFromHere_____,
     set:function(_,k,v){c.F.PagesWrite(k,v).onsuccess=c.F.M1631255085998UpdatePagesList___();}});
 c.F.M1631244397674ProcessFetch______=function(event){
     let url = event.request.url;
-    console.log(url)
     let rest = url.slice(location.origin.length+1);
-    console.log(rest)
     const rex = new RegExp(/M\d{13}/, 'g');
     let tst = rex.test(rest)
-    console.log(tst)
     // let adds = url - self.registration.scope
     if(tst)event.respondWith(
         new Response(c.M1631015901555index_markup______,c.M1631015695037html_header_______ ));
@@ -227,7 +224,7 @@ c.F.M1632327640527initScript________=async function(){
     else {console.log("Init word:", res.result);
     let res2 = c.F.WordsRead().get('res.result');
     res2.onsuccess=function(){
-        new AsyncFunction(res2.result)
+        new AsyncFunction(res2.result)()
     }}}}
 c.F.M1632327609356initScript________=async function(){
     console.log('init')
