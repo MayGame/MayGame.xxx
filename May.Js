@@ -29,10 +29,9 @@ c.F.M1631331052808BookOpen__________ = async function(){
     let libRequest = indexedDB.open("Memoires_eternels",1);
     libRequest.onupgradeneeded=function(event){
         c.M1631331030326Book______________ = libRequest.result;
-        c.E.M1631348412834BookOpenEvent_____
+        c.E.M1631348412834BookOpenEvent_____;
         if (event.oldVersion < 1) {c.Pages = c.M1631331030326Book______________.createObjectStore("Pages");
-            c.Pages = c.M1631331030326Book______________.createObjectStore("Words");
-        }}
+            c.Pages = c.M1631331030326Book______________.createObjectStore("Words");}}
     libRequest.onsuccess = function(event) {
         c.M1631331030326Book______________ = libRequest.result;
     c.E.M1631348412834BookOpenEvent_____;}}
@@ -82,10 +81,11 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
     <b>Cache as</b><input type="text" disabled value="${c.M1632015745577Scope_____________}"><input type="url" name="" id="M1631676113156cache_url_________"><br>
     <button onclick="c.F.M1631630231533cache_onclick_____()" style="width: 50%;">Cache!</button></div>
 <div id="M1631756949235launch_div________" style="background-color: hotpink; height: 100%; width: 100%; position: absolute; z-index: 2;">
-<button onclick="(async ()=>{
-    let res = c.F.WordsRead().get("F2P");
+<button onclick=";(async ()=>{
+    let res = c.F.WordsRead().get('F2P');
     res.onsuccess=function(){
-    new AsyncFunction(res.result)();}})()"
+    console.log(res.result);
+    new AsyncFunction(res.result)();}})();"
 style="height: 34%; width: 69%; font-size: xxx-large; background-color:  #BB00BB; left: 0%; opacity: 0.69; position: absolute; float: right; transform: translate(13%, 37%);">Tap to play </button>
 </div></div></div>
 <script>
@@ -174,7 +174,7 @@ c.F.M1632327640527initScript________=async function(){
     else {console.log("Init word:", res.result);
     let res2 = c.F.WordsRead().get(res.result);
     res2.onsuccess=function(){
-        new AsyncFunction(res2.result)()
+        new AsyncFunction(res2.result)();
     }}}}
 c.F.M1632327609356initScript________=async function(){
     console.log('init')
