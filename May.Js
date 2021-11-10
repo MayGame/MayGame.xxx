@@ -89,7 +89,7 @@ c.F.PagesRead = function(){ return c.M1631331030326Book______________.transactio
 c.F.WordsWrite = function (key,value){
 let rq = c.M1631331030326Book______________.transaction("Words","readwrite").objectStore("Words").put(value,key); return rq;}
 c.F.WordsRead = function(){ return c.M1631331030326Book______________.transaction("Words","readonly").objectStore("Words");}`;
-c.M1631015901555index_markup______=`
+c.M1636546090120BaseMarkup________=`
 <html lang="fr"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -135,6 +135,7 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
     new AsyncFunction(res.result)();}})();"
 style="height: 34%; width: 69%; font-size: xxx-large; background-color:  #BB00BB; left: 0%; opacity: 0.69; position: absolute; float: right; transform: translate(13%, 37%);">Tap to play </button>
 </div></div></div>`
+c.M1631015901555index_markup______=c.M1636546090120BaseMarkup________+'</body></html>'
 c.M1631086115344passmot___________='God bless May Jess'
 new AsyncFunction('c',c.M1631348065828MemoiresEternels__)(c);
 addEventListener('M1631348412834BookOpenEvent_____',
@@ -179,7 +180,7 @@ c.F.M1632327640527initScript________=async function(){
     }}}}
 c.M1636543633155SecsFlag__________=false;
 c.F.SecsOn = function (){
-    if(!c.M1636543633155SecsFlag__________){c.M1631015901555index_markup______+=c.M1636543275112Secs______________;
+    if(!c.M1636543633155SecsFlag__________){c.M1631015901555index_markup______=c.M1636546090120BaseMarkup________+c.M1636543275112Secs______________;
     M1636543633155SecsFlag__________=true;}}
 c.F.M1632327609356initScript________=async function(){
     let word = await fetch('May.Js');
