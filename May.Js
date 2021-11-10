@@ -33,8 +33,13 @@ c.F.M1631631671789fetchBtnOnclick___=async function(){
         else c.M1631678062206fetchBlobBuffer___=await response.blob();});}
 c.F.M1632228496305Toggle_Cache______ = function(){
 if(M1631756949235launch_div________.style.visibility=='hidden')
-M1631756949235launch_div________.style.visibility='visible';
-else M1631756949235launch_div________.style.visibility='hidden';}
+{M1631692863388cache_page_div____.style.visibility='hidden';
+    M1631756949235launch_div________.style.visibility='visible';
+}
+    else 
+    {M1631692863388cache_page_div____.style.visibility='visible';
+M1631756949235launch_div________.style.visibility='hidden';
+}
 c.M1631066770639id_innerHTML______ = new Proxy({},{get:function(_,k){return document.getElementById(k);},
 set:function(_,k,v){document.getElementById(k).innerHTML=v;}})
 c.F.M1632214510785Clearrr___________=function(){
@@ -92,7 +97,7 @@ c.M1636546090120BaseMarkup________=`
 <!DOCTYPE html>
 <html lang="fr"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no" />
     <script src="pin.Js"></script>
     <script src="meme.Js"></script>
     <style>
@@ -108,7 +113,7 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
 <div style="grid-area: bar; background-color: pink; width: 100%;">
 <button onclick="c.F.M1632228496305Toggle_Cache______()" style="height: 100%; width: 100%; border-radius: 0%;"></button></div>
 <div style="grid-area: body; background-color: greenyellow; height: 100%; width: 100%; " id="M1631693403689body0_div_________">
-<div style="background-color: orchid; height: 100%; width: 100%; position: absolute; z-index: 1;" id="M1631692863388cache_page_div____">
+<div style="background-color: orchid; height: 100%; width: 100%; position: absolute; z-index: 1; visibility: hidden;" id="M1631692863388cache_page_div____">
     <h3>Cache resources</h3>
     <input type="file" id="M1632238282312File_Element______" style="display:none" onchange="c.F.M1632238378329Handle_Files______(this.files)">
     <label for="M1632238282312File_Element______" class="button">Select a file</label>
