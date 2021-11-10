@@ -37,7 +37,6 @@ M1631756949235launch_div________.style.visibility='visible';
 else M1631756949235launch_div________.style.visibility='hidden';}
 c.M1631066770639id_innerHTML______ = new Proxy({},{get:function(_,k){return document.getElementById(k);},
 set:function(_,k,v){document.getElementById(k).innerHTML=v;}})
-c.M1631709743226current_active_tab=M1631756949235launch_div________;
 c.F.M1632214510785Clearrr___________=function(){
     M1631632467797text_textarea_____.value='';
     c.M1631675707613fetchBodyBufferVar=undefined;
@@ -90,9 +89,10 @@ c.F.WordsWrite = function (key,value){
 let rq = c.M1631331030326Book______________.transaction("Words","readwrite").objectStore("Words").put(value,key); return rq;}
 c.F.WordsRead = function(){ return c.M1631331030326Book______________.transaction("Words","readonly").objectStore("Words");}`;
 c.M1636546090120BaseMarkup________=`
+<!DOCTYPE html>
 <html lang="fr"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <script src="pin.Js"></script>
     <script src="meme.Js"></script>
     <style>
