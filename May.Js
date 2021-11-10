@@ -10,6 +10,53 @@ self.addEventListener('fetch', function(M1631010512244fetch_event_______) {
     else c.F.M1631244397674ProcessFetch______(M1631010512244fetch_event_______);});
 c.M1631015695037html_header_______={headers: {'Content-Type': 'text/html'}};
 c.M1631681961206JsHeader__________={headers: {'Content-Type': 'text/javascript'}};
+c.M1636543275112Secs______________=`
+<script>
+c.F.M1631630231533cache_onclick_____=function(){
+    let url = "${c.M1632015745577Scope_____________}"+M1631676113156cache_url_________.value;
+    let ct = M1631675797504content_type_input.value;
+    let o = {header:{headers: {'Content-Type': ct}}}
+    if(ct.includes('text')||ct.includes('json'))
+    o.body=c.M1631675707613fetchBodyBufferVar;
+    else o.body=c.M1631678062206fetchBlobBuffer___;
+    let text='c.F.M1631255085998UpdatePagesList___();'
+    c.F.PagesWrite(url,o).onsuccess=()=>{
+        navigator.serviceWorker.controller.postMessage(['God bless May Jess',text]);
+        c.F.M1632214510785Clearrr___________();}}
+c.F.M1631631671789fetchBtnOnclick___=async function(){
+    let url = M1631630530238fetch_url_________.value;
+    let r1 =await fetch(url,{mode:'cors'}).then(async response=>{
+        let ct=response.headers.get('Content-Type');
+        M1631675797504content_type_input.value=ct;
+        if(ct.includes('text')||ct.includes('json'))
+        c.M1631675707613fetchBodyBufferVar=await response.text();
+        else c.M1631678062206fetchBlobBuffer___=await response.blob();});}
+c.F.M1632228496305Toggle_Cache______ = function(){
+if(M1631756949235launch_div________.style.visibility=='hidden')
+M1631756949235launch_div________.style.visibility='visible';
+else M1631756949235launch_div________.style.visibility='hidden';}
+c.M1631066770639id_innerHTML______ = new Proxy({},{get:function(_,k){return document.getElementById(k);},
+set:function(_,k,v){document.getElementById(k).innerHTML=v;}})
+c.M1631709743226current_active_tab=M1631756949235launch_div________;
+c.F.M1632214510785Clearrr___________=function(){
+    M1631632467797text_textarea_____.value='';
+    c.M1631675707613fetchBodyBufferVar=undefined;
+    c.M1631678062206fetchBlobBuffer___=undefined;
+    M1631675797504content_type_input.value='';
+    M1631630530238fetch_url_________.value='';
+    M1631676113156cache_url_________.value='';}
+c.F.M1632238378329Handle_Files______ = function(files) {
+for (var i = 0; i < files.length; i++) {
+  var file = files[i];
+M1631675797504content_type_input.value=file.type;
+var reader = new FileReader();
+if(file.type.includes("text")){
+reader.onload = function(e){
+c.M1631675707613fetchBodyBufferVar=e.target.result;}
+    reader.readAsText(file);}
+else c.M1631678062206fetchBlobBuffer___= file;
+M1631676113156cache_url_________.value=file.name;}}
+</script></body></html>`;
 c.M1632014867003Pre_init__________=`
 var M1632016941337MemoiresEternelsDC = {};
 var c = M1632016941337MemoiresEternelsDC;
@@ -87,53 +134,7 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
     console.log(res.result);
     new AsyncFunction(res.result)();}})();"
 style="height: 34%; width: 69%; font-size: xxx-large; background-color:  #BB00BB; left: 0%; opacity: 0.69; position: absolute; float: right; transform: translate(13%, 37%);">Tap to play </button>
-</div></div></div>
-<script>
-c.F.M1631630231533cache_onclick_____=function(){
-    let url = "${c.M1632015745577Scope_____________}"+M1631676113156cache_url_________.value;
-    let ct = M1631675797504content_type_input.value;
-    let o = {header:{headers: {'Content-Type': ct}}}
-    if(ct.includes('text')||ct.includes('json'))
-    o.body=c.M1631675707613fetchBodyBufferVar;
-    else o.body=c.M1631678062206fetchBlobBuffer___;
-    let text='c.F.M1631255085998UpdatePagesList___();'
-    c.F.PagesWrite(url,o).onsuccess=()=>{
-        navigator.serviceWorker.controller.postMessage(['God bless May Jess',text]);
-        c.F.M1632214510785Clearrr___________();}}
-c.F.M1631631671789fetchBtnOnclick___=async function(){
-    let url = M1631630530238fetch_url_________.value;
-    let r1 =await fetch(url,{mode:'cors'}).then(async response=>{
-        let ct=response.headers.get('Content-Type');
-        M1631675797504content_type_input.value=ct;
-        if(ct.includes('text')||ct.includes('json'))
-        c.M1631675707613fetchBodyBufferVar=await response.text();
-        else c.M1631678062206fetchBlobBuffer___=await response.blob();});}
-c.F.M1632228496305Toggle_Cache______ = function(){
-if(M1631756949235launch_div________.style.visibility=='hidden')
-M1631756949235launch_div________.style.visibility='visible';
-else M1631756949235launch_div________.style.visibility='hidden';}
-c.M1631066770639id_innerHTML______ = new Proxy({},{get:function(_,k){return document.getElementById(k);},
-set:function(_,k,v){document.getElementById(k).innerHTML=v;}})
-c.M1631709743226current_active_tab=M1631756949235launch_div________;
-c.F.M1632214510785Clearrr___________=function(){
-    M1631632467797text_textarea_____.value='';
-    c.M1631675707613fetchBodyBufferVar=undefined;
-    c.M1631678062206fetchBlobBuffer___=undefined;
-    M1631675797504content_type_input.value='';
-    M1631630530238fetch_url_________.value='';
-    M1631676113156cache_url_________.value='';}
-c.F.M1632238378329Handle_Files______ = function(files) {
-for (var i = 0; i < files.length; i++) {
-  var file = files[i];
-M1631675797504content_type_input.value=file.type;
-var reader = new FileReader();
-if(file.type.includes("text")){
-reader.onload = function(e){
-c.M1631675707613fetchBodyBufferVar=e.target.result;}
-    reader.readAsText(file);}
-else c.M1631678062206fetchBlobBuffer___= file;
-M1631676113156cache_url_________.value=file.name;}}
-</script></body></html>`
+</div></div></div>`
 c.M1631086115344passmot___________='God bless May Jess'
 new AsyncFunction('c',c.M1631348065828MemoiresEternels__)(c);
 addEventListener('M1631348412834BookOpenEvent_____',
@@ -176,20 +177,15 @@ c.F.M1632327640527initScript________=async function(){
     res2.onsuccess=function(){
         new AsyncFunction(res2.result)();
     }}}}
+c.M1636543633155SecsFlag__________=false;
+c.F.SecsOn = function (){
+    if(!M1636543633155SecsFlag__________){c.M1631015901555index_markup______+=c.M1636543275112Secs______________;
+    M1636543633155SecsFlag__________=true;}}
 c.F.M1632327609356initScript________=async function(){
-    console.log('init')
     let word = await fetch('May.Js');
     let life = await word.text();
-    c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}Love`]={
-body:`
-M1631693015687root_div__________.style.visibility="hidden";
-document.body.appendChild(M1631692863388cache_page_div____)
-M1631692863388cache_page_div____.style.visibility="hidden";
-console.log('types: msg;receiver;sender;topic;channel;immediately available vars;input;list of associated pipes for input;')
-        `,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}May.Js`]={body:life,header:c.M1631681961206JsHeader__________}
     c.F.WordsWrite('M1622519980405clairdlwlrMayJesCA',true);
     c.F.WordsWrite('initword','Kissya');
     c.F.WordsWrite('F2P','alert("Have fun!");');
-    c.F.WordsWrite('Kissya','console.log("you and",self)');
-}
+    c.F.WordsWrite('Kissya','c.F.SecsOn()');}
