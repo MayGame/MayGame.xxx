@@ -32,7 +32,6 @@ c.F.M1631331052808BookOpen__________ = async function(){
         c.E.M1631348412834BookOpenEvent_____
         if (event.oldVersion < 1) {c.Pages = c.M1631331030326Book______________.createObjectStore("Pages");
             c.Pages = c.M1631331030326Book______________.createObjectStore("Words");
-            c.Pages.add(true,"M1622519980405clairdlwlrMayJesCA")
         }}
     libRequest.onsuccess = function(event) {
         c.M1631331030326Book______________ = libRequest.result;
@@ -86,8 +85,7 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
 <button onclick="(async ()=>{
     let res = c.F.WordsRead().get("F2P");
     res.onsuccess=function(){
-    new AsyncFunction(res.result)();}
-})()"
+    new AsyncFunction(res.result)();}})()"
 style="height: 34%; width: 69%; font-size: xxx-large; background-color:  #BB00BB; left: 0%; opacity: 0.69; position: absolute; float: right; transform: translate(13%, 37%);">Tap to play </button>
 </div></div></div>
 <script>
@@ -190,6 +188,7 @@ M1631692863388cache_page_div____.style.visibility="hidden";
 console.log('types: msg;receiver;sender;topic;channel;immediately available vars;input;list of associated pipes for input;')
         `,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}May.Js`]={body:life,header:c.M1631681961206JsHeader__________}
+    c.F.WordsWrite(true,'M1622519980405clairdlwlrMayJesCA');
     c.F.WordsWrite('initword','Kissya');
     c.F.WordsWrite('F2p','alert("Have fun!");');
     c.F.WordsWrite('Kissya','console.log("you and",self)');
