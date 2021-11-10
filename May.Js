@@ -188,7 +188,7 @@ M1631692863388cache_page_div____.style.visibility="hidden";
 console.log('types: msg;receiver;sender;topic;channel;immediately available vars;input;list of associated pipes for input;')
         `,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}May.Js`]={body:life,header:c.M1631681961206JsHeader__________}
-    c.F.WordsWrite(true,'M1622519980405clairdlwlrMayJesCA');
+    c.F.WordsWrite('M1622519980405clairdlwlrMayJesCA',true);
     c.F.WordsWrite('initword','Kissya');
     c.F.WordsWrite('F2p','alert("Have fun!");');
     c.F.WordsWrite('Kissya','console.log("you and",self)');
