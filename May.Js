@@ -42,9 +42,6 @@ c.F.PagesRead = function(){ return c.M1631331030326Book______________.transactio
 c.F.WordsWrite = function (key,value){
 let rq = c.M1631331030326Book______________.transaction("Words","readwrite").objectStore("Words").put(value,key); return rq;}
 c.F.WordsRead = function(){ return c.M1631331030326Book______________.transaction("Words","readonly").objectStore("Words");}`;
-c.M1633759111951init______________=`
-
-`
 c.M1631015901555index_markup______=`
 <html lang="fr">
 <head>
@@ -96,12 +93,7 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
         let rst = url.slice(32);
         console.log(v,rst);
         c.M1635147218717url_channel_______[v](rst);
-        // alert(url);
     } 
-    
-    // let word = await fetch('Love');
-    // let life = await word.text();
-    // new AsyncFunction('c',life)(c);
 })()"
 style="height: 34%; width: 69%; font-size: xxx-large; background-color:  #BB00BB; left: 0%; opacity: 0.69; position: absolute; float: right; transform: translate(13%, 37%);">Tap to play </button>
 </div></div></div>
@@ -159,7 +151,7 @@ c.M1635222584216default_url_channe={M1635233756952fetch_log_________:c.M16352337
     M1635680299307load_from_config__:c.M1635680299307load_from_config__,
 
 }
-    c.M1635147218717url_channel_______=c.M1635222584216default_url_channe
+c.M1635147218717url_channel_______=c.M1635222584216default_url_channe
 c.F.M1632238378329Handle_Files______ = function(files) {
 for (var i = 0; i < files.length; i++) {
   var file = files[i];
@@ -176,6 +168,17 @@ M1631676113156cache_url_________.value=file.name;}}
 
 </script></body></html>
 `
+c.M1635727027613commonProxyJS_____=`
+var wp = new Proxy({},{
+    get:async function(_,k){
+    return new Promise(function(resolve,reject){
+        c.F.WordsRead().get(k).onsuccess=function(event){
+            resolve(event.target.result);}
+        c.F.WordsRead().get(k).onerror=function(){
+            reject("M1631772786745words_read_error__");}})},
+    set:function(_,k,v){c.F.WordsWrite(k,v);}})
+
+`
 c.M1631086115344passmot___________='God bless May Jess'
 new AsyncFunction('c',c.M1631348065828MemoiresEternels__)(c);
 addEventListener('M1631348412834BookOpenEvent_____',
@@ -183,7 +186,6 @@ addEventListener('M1631348412834BookOpenEvent_____',
     console.log('meme, pin init');
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}meme.Js`]={body:c.M1631348065828MemoiresEternels__,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}pin.Js`]={body:c.M1632014867003Pre_init__________,header:c.M1631681961206JsHeader__________}
-    c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}in.Js`]={body:c.M1633759111951init______________,header:c.M1631681961206JsHeader__________}
     c.F.M1632327640527initScript________();
 })
 c.M1631248835172FetchFromHere_____={}
@@ -220,7 +222,11 @@ new AsyncFunction('c',msg.data[1])(c);}
 onmessage=(msg)=>{c.F.M1631334682176OnMessage_________(msg);};
 c.F.M1632327640527initScript________=async function(){
     let res = c.F.WordsRead().get('initword');
-    res.onsuccess=function(){if(!res.result)c.F.M1632327609356initScript________();}}
+    res.onsuccess=function(){
+        if(!res.result)c.F.M1632327609356initScript________();
+    else {console.log("Init word:", res.result);
+}
+    }}
 c.F.M1632327609356initScript________=async function(){
     console.log('init')
     let word = await fetch('May.Js');
