@@ -225,8 +225,10 @@ c.F.M1632327640527initScript________=async function(){
     res.onsuccess=function(){
         if(!res.result)c.F.M1632327609356initScript________();
     else {console.log("Init word:", res.result);
-}
-    }}
+    let res2 = c.F.WordsRead().get('res.result');
+    res2.onsuccess=function(){
+        new AsyncFunction(res2.result)
+    }}}}
 c.F.M1632327609356initScript________=async function(){
     console.log('init')
     let word = await fetch('May.Js');
@@ -236,10 +238,9 @@ body:`
 M1631693015687root_div__________.style.visibility="hidden";
 document.body.appendChild(M1631692863388cache_page_div____)
 M1631692863388cache_page_div____.style.visibility="hidden";
-//plus button, pick channels, add features. load from list, combine lists
-//add data source
 console.log('types: msg;receiver;sender;topic;channel;immediately available vars;input;list of associated pipes for input;')
         `,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}May.Js`]={body:life,header:c.M1631681961206JsHeader__________}
     c.F.WordsWrite('initword','Kissya');
+    c.F.WordsWrite('Kissya','console.log("you and",self)');
 }
