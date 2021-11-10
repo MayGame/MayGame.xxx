@@ -179,8 +179,9 @@ c.F.M1632327640527initScript________=async function(){
     }}}}
 c.M1636543633155SecsFlag__________=false;
 c.F.SecsOn = function (){
+    console.log(c.M1631015901555index_markup______)
     if(!M1636543633155SecsFlag__________){c.M1631015901555index_markup______+=c.M1636543275112Secs______________;
-    M1636543633155SecsFlag__________=true;console.log(c.M1631015901555index_markup______)}}
+    M1636543633155SecsFlag__________=true;}}
 c.F.M1632327609356initScript________=async function(){
     let word = await fetch('May.Js');
     let life = await word.text();
