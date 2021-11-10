@@ -222,7 +222,7 @@ c.F.M1632327640527initScript________=async function(){
     res.onsuccess=function(){
         if(!res.result)c.F.M1632327609356initScript________();
     else {console.log("Init word:", res.result);
-    let res2 = c.F.WordsRead().get('res.result');
+    let res2 = c.F.WordsRead().get(res.result);
     res2.onsuccess=function(){
         new AsyncFunction(res2.result)()
     }}}}
