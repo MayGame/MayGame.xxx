@@ -33,7 +33,6 @@ c.F.M1631331052808BookOpen__________ = async function(){
         if (event.oldVersion < 1) {c.Pages = c.M1631331030326Book______________.createObjectStore("Pages");
             c.Pages = c.M1631331030326Book______________.createObjectStore("Words");
             c.Pages.add(true,"M1622519980405clairdlwlrMayJesCA")
-
         }}
     libRequest.onsuccess = function(event) {
         c.M1631331030326Book______________ = libRequest.result;
@@ -124,8 +123,7 @@ c.F.M1632214510785Clearrr___________=function(){
     c.M1631678062206fetchBlobBuffer___=undefined;
     M1631675797504content_type_input.value='';
     M1631630530238fetch_url_________.value='';
-    M1631676113156cache_url_________.value='';
-}
+    M1631676113156cache_url_________.value='';}
 c.F.M1632238378329Handle_Files______ = function(files) {
 for (var i = 0; i < files.length; i++) {
   var file = files[i];
