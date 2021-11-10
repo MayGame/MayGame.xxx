@@ -85,15 +85,9 @@ display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;"
     <button onclick="c.F.M1631630231533cache_onclick_____()" style="width: 50%;">Cache!</button></div>
 <div id="M1631756949235launch_div________" style="background-color: hotpink; height: 100%; width: 100%; position: absolute; z-index: 2;">
 <button onclick="(async ()=>{
-    let url = self.location.pathname+self.location.search
-    if(url=='/')alert('')
-    else {
-        url = url.slice(1);
-        let v = url.substring(0,32);
-        let rst = url.slice(32);
-        console.log(v,rst);
-        c.M1635147218717url_channel_______[v](rst);
-    } 
+    let res = c.F.WordsRead().get("F2P");
+    res.onsuccess=function(){
+    new AsyncFunction(res.result)();}
 })()"
 style="height: 34%; width: 69%; font-size: xxx-large; background-color:  #BB00BB; left: 0%; opacity: 0.69; position: absolute; float: right; transform: translate(13%, 37%);">Tap to play </button>
 </div></div></div>
@@ -134,24 +128,6 @@ c.F.M1632214510785Clearrr___________=function(){
     M1631630530238fetch_url_________.value='';
     M1631676113156cache_url_________.value='';
 }
-c.M1635233756952fetch_log_________= async function(k){ let res = await fetch('https://xxx.maygame.xxx/memoires_eternels/'+k);
-console.log("param, ",k );
-console.log("res:",res);
-};
-c.M1635300106630just_log__________=function(k){console.log("just log:",k)}
-// new Proxy(c,{get:async function(_,k){
-//     let res = await fetch('https://xxx.maygame.xxx/memoires_eternels/'+k);
-//     console.log("getter, ",k )}});
-//     console.log(res)
-// c.M1635223330997reply_channel_url_=
-c.M1635680299307load_from_config__=async function(){}
-
-c.M1635222584216default_url_channe={M1635233756952fetch_log_________:c.M1635233756952fetch_log_________,
-    M1635300106630just_log__________:c.M1635300106630just_log__________,
-    M1635680299307load_from_config__:c.M1635680299307load_from_config__,
-
-}
-c.M1635147218717url_channel_______=c.M1635222584216default_url_channe
 c.F.M1632238378329Handle_Files______ = function(files) {
 for (var i = 0; i < files.length; i++) {
   var file = files[i];
@@ -163,9 +139,6 @@ c.M1631675707613fetchBodyBufferVar=e.target.result;}
     reader.readAsText(file);}
 else c.M1631678062206fetchBlobBuffer___= file;
 M1631676113156cache_url_________.value=file.name;}}
-
-/*  */
-
 </script></body></html>
 `
 c.M1635727027613commonProxyJS_____=`
@@ -177,13 +150,11 @@ var wp = new Proxy({},{
         c.F.WordsRead().get(k).onerror=function(){
             reject("M1631772786745words_read_error__");}})},
     set:function(_,k,v){c.F.WordsWrite(k,v);}})
-
 `
 c.M1631086115344passmot___________='God bless May Jess'
 new AsyncFunction('c',c.M1631348065828MemoiresEternels__)(c);
 addEventListener('M1631348412834BookOpenEvent_____',
 () => {
-    console.log('meme, pin init');
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}meme.Js`]={body:c.M1631348065828MemoiresEternels__,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}pin.Js`]={body:c.M1632014867003Pre_init__________,header:c.M1631681961206JsHeader__________}
     c.F.M1632327640527initScript________();
@@ -204,10 +175,8 @@ c.F.M1631244397674ProcessFetch______=function(event){
     let rest = url.slice(location.origin.length+1);
     const rex = new RegExp(/M\d{13}/, 'g');
     let tst = rex.test(rest)
-    // let adds = url - self.registration.scope
     if(tst)event.respondWith(
-        new Response(c.M1631015901555index_markup______,c.M1631015695037html_header_______ ));
-    //self.location.pathname+self.location.search
+    new Response(c.M1631015901555index_markup______,c.M1631015695037html_header_______ ));
     let o = c.M1631248918499FetchProxy________[url];
     if(o){let body=o.body;
     let header=o.header??c.M1631015695037html_header_______;
@@ -239,5 +208,17 @@ console.log('types: msg;receiver;sender;topic;channel;immediately available vars
         `,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}May.Js`]={body:life,header:c.M1631681961206JsHeader__________}
     c.F.WordsWrite('initword','Kissya');
+    c.F.WordsWrite('F2p','alert("Have fun!");');
     c.F.WordsWrite('Kissya','console.log("you and",self)');
 }
+// (async ()=>{
+//     let url = self.location.pathname+self.location.search
+//     if(url=='/');//alert('')
+//     else {
+//         url = url.slice(1);
+//         let v = url.substring(0,32);
+//         let rst = url.slice(32);
+//         console.log(v,rst);
+//         c.M1635147218717url_channel_______[v](rst);
+//     } 
+// })()
