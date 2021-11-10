@@ -43,8 +43,7 @@ c.F.WordsWrite = function (key,value){
 let rq = c.M1631331030326Book______________.transaction("Words","readwrite").objectStore("Words").put(value,key); return rq;}
 c.F.WordsRead = function(){ return c.M1631331030326Book______________.transaction("Words","readonly").objectStore("Words");}`;
 c.M1631015901555index_markup______=`
-<html lang="fr">
-<head>
+<html lang="fr"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="pin.Js"></script>
@@ -56,9 +55,7 @@ c.M1631015901555index_markup______=`
     body {margin: 0;}
     .button{background-color: deeppink; border-radius: 1em; border-style: double;}
     div{display: block; position: relative;}
-    </style>
-</head>
-<body>
+    </style></head><body>
 <div id="M1631693015687root_div__________" style="height: 100vh; width: 100vw;
 display: grid; grid-template-areas: 'bar' 'body'; grid-template-rows: 1fr 14fr;">
 <div style="grid-area: bar; background-color: pink; width: 100%;">
@@ -110,13 +107,11 @@ c.F.M1631631671789fetchBtnOnclick___=async function(){
         M1631675797504content_type_input.value=ct;
         if(ct.includes('text')||ct.includes('json'))
         c.M1631675707613fetchBodyBufferVar=await response.text();
-        else c.M1631678062206fetchBlobBuffer___=await response.blob();
-    });}
+        else c.M1631678062206fetchBlobBuffer___=await response.blob();});}
 c.F.M1632228496305Toggle_Cache______ = function(){
 if(M1631756949235launch_div________.style.visibility=='hidden')
 M1631756949235launch_div________.style.visibility='visible';
-else M1631756949235launch_div________.style.visibility='hidden'
-}
+else M1631756949235launch_div________.style.visibility='hidden';}
 c.M1631066770639id_innerHTML______ = new Proxy({},{get:function(_,k){return document.getElementById(k);},
 set:function(_,k,v){document.getElementById(k).innerHTML=v;}})
 c.M1631709743226current_active_tab=M1631756949235launch_div________;
@@ -139,26 +134,13 @@ c.M1631675707613fetchBodyBufferVar=e.target.result;}
     reader.readAsText(file);}
 else c.M1631678062206fetchBlobBuffer___= file;
 M1631676113156cache_url_________.value=file.name;}}
-</script></body></html>
-`
-c.M1635727027613commonProxyJS_____=`
-var wp = new Proxy({},{
-    get:async function(_,k){
-    return new Promise(function(resolve,reject){
-        c.F.WordsRead().get(k).onsuccess=function(event){
-            resolve(event.target.result);}
-        c.F.WordsRead().get(k).onerror=function(){
-            reject("M1631772786745words_read_error__");}})},
-    set:function(_,k,v){c.F.WordsWrite(k,v);}})
-`
+</script></body></html>`
 c.M1631086115344passmot___________='God bless May Jess'
 new AsyncFunction('c',c.M1631348065828MemoiresEternels__)(c);
 addEventListener('M1631348412834BookOpenEvent_____',
-() => {
-    c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}meme.Js`]={body:c.M1631348065828MemoiresEternels__,header:c.M1631681961206JsHeader__________}
+() => {c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}meme.Js`]={body:c.M1631348065828MemoiresEternels__,header:c.M1631681961206JsHeader__________}
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}pin.Js`]={body:c.M1632014867003Pre_init__________,header:c.M1631681961206JsHeader__________}
-    c.F.M1632327640527initScript________();
-})
+    c.F.M1632327640527initScript________();})
 c.M1631248835172FetchFromHere_____={}
 c.F.M1631255085998UpdatePagesList___ = async function(){
 let ks = c.F.PagesRead().getAllKeys();
@@ -211,14 +193,3 @@ console.log('types: msg;receiver;sender;topic;channel;immediately available vars
     c.F.WordsWrite('F2p','alert("Have fun!");');
     c.F.WordsWrite('Kissya','console.log("you and",self)');
 }
-// (async ()=>{
-//     let url = self.location.pathname+self.location.search
-//     if(url=='/');//alert('')
-//     else {
-//         url = url.slice(1);
-//         let v = url.substring(0,32);
-//         let rst = url.slice(32);
-//         console.log(v,rst);
-//         c.M1635147218717url_channel_______[v](rst);
-//     } 
-// })()
