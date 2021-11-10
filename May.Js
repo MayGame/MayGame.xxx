@@ -190,6 +190,6 @@ console.log('types: msg;receiver;sender;topic;channel;immediately available vars
     c.M1631248918499FetchProxy________[`${c.M1632015745577Scope_____________}May.Js`]={body:life,header:c.M1631681961206JsHeader__________}
     c.F.WordsWrite('M1622519980405clairdlwlrMayJesCA',true);
     c.F.WordsWrite('initword','Kissya');
-    c.F.WordsWrite('F2p','alert("Have fun!");');
+    c.F.WordsWrite('F2P','alert("Have fun!");');
     c.F.WordsWrite('Kissya','console.log("you and",self)');
 }
