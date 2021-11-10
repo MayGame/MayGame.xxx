@@ -31,7 +31,10 @@ c.F.M1631331052808BookOpen__________ = async function(){
         c.M1631331030326Book______________ = libRequest.result;
         c.E.M1631348412834BookOpenEvent_____
         if (event.oldVersion < 1) {c.Pages = c.M1631331030326Book______________.createObjectStore("Pages");
-            c.Pages = c.M1631331030326Book______________.createObjectStore("Words");}}
+            c.Pages = c.M1631331030326Book______________.createObjectStore("Words");
+            c.Pages.add(true,"M1622519980405clairdlwlrMayJesCA")
+
+        }}
     libRequest.onsuccess = function(event) {
         c.M1631331030326Book______________ = libRequest.result;
     c.E.M1631348412834BookOpenEvent_____;}}
